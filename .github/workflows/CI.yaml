@@ -84,5 +84,10 @@ jobs:
     - name: Changelog
       uses: glennawatson/ChangeLog@v1
       id: changelog
+    
+    - name: print change log
+      
+      shell: bash -l {0}
+      
       run:  |
         echo ${{ steps.Changelog.outputs.changelog }} 
