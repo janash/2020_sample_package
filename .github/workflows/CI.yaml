@@ -28,12 +28,6 @@ jobs:
         python-version: [3.8, 3.9]
 
     steps:
-    - name: Welcome
-      if: matrix.operating-system == 'ubuntu-latest'
-      uses: mscoutermarsh/ascii-art-action@master
-      with:
-        text: 'Preparing to Run Tests'
-
     - uses: actions/checkout@v2
 
     - name: Additional info about the build
@@ -56,6 +50,12 @@ jobs:
         auto-update-conda: false
         auto-activate-base: false
         show-channel-urls: true
+    
+    - name: Welcome
+      if: matrix.operating-system == 'ubuntu-latest'
+      uses: mscoutermarsh/ascii-art-action@master
+      with:
+        text: '${{ github.event_name }} from ${{ github.actor }}'
 
     - name: Install package
 
