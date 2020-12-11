@@ -81,6 +81,9 @@ jobs:
         flags: unittests
         name: codecov-${{ matrix.operating-system }}-py${{ matrix.python-version }}
         
-    - name: Python Syntax Checker
-      uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
+    - name: Python Linter
+      uses: sunnysid3up/python-linter@v0.1-beta.7
+      with:
+        source: molecool
+
 
