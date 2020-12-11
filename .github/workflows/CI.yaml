@@ -76,7 +76,7 @@ jobs:
         name: codecov-${{ matrix.operating-system }}-py${{ matrix.python-version }}
     
     - name: Say Thanks
-      uses: mscoutermarsh/ascii-art-action@master
       if: ${{ matrix.operating-system }} == 'ubuntu-latest'
+      uses: mscoutermarsh/ascii-art-action@master
       with:
         text: 'Tests passed'
