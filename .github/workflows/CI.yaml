@@ -81,13 +81,6 @@ jobs:
         flags: unittests
         name: codecov-${{ matrix.operating-system }}-py${{ matrix.python-version }}
         
-    - name: Changelog
-      uses: glennawatson/ChangeLog@v1
-      id: changelog
-    
-    - name: print change log
-      
-      shell: bash -l {0}
-      
-      run:  |
-        echo ${{ steps.Changelog.outputs.changelog }} 
+    - name: Python Syntax Checker
+      uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
+
