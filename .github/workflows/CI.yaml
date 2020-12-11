@@ -80,3 +80,9 @@ jobs:
         file: ./coverage.xml
         flags: unittests
         name: codecov-${{ matrix.operating-system }}-py${{ matrix.python-version }}
+        
+    - name: Changelog
+      uses: glennawatson/ChangeLog@v1
+      id: changelog
+      run:  |
+        echo ${{ steps.Changelog.outputs.changelog }} 
