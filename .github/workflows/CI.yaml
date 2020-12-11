@@ -28,6 +28,12 @@ jobs:
         python-version: [3.8, 3.9]
 
     steps:
+    - name: Welcome
+      if: matrix.operating-system == 'ubuntu-latest'
+      uses: mscoutermarsh/ascii-art-action@master
+      with:
+        text: 'Preparing to Run Tests'
+
     - uses: actions/checkout@v2
 
     - name: Additional info about the build
@@ -74,9 +80,3 @@ jobs:
         file: ./coverage.xml
         flags: unittests
         name: codecov-${{ matrix.operating-system }}-py${{ matrix.python-version }}
-    
-    - if: ${{ matrix.operating-system }} == 'ubuntu-latest'
-      name: Say Thanks
-      uses: mscoutermarsh/ascii-art-action@master
-      with:
-        text: 'Tests passed'
