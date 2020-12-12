@@ -1,7 +1,7 @@
 molecool
 ==============================
 [//]: # (Badges)
-[![GitHub Actions Build Status](https://github.com/janash/molecool/workflows/CI/badge.svg)](https://github.com/janash/molecool/actions?query=branch%3Amaster+workflow%3ACI)
+[![GitHub Actions Build Status](https://github.com/janash/2020_sample_package/workflows/CI/badge.svg)](https://github.com/janash/2020_sample_package/actions?query=workflow%3ACI)
 
 [![GitHub Actions Build Status](https://github.com/janash/molecool/workflows/CI/badge.svg)](https://github.com/janash/molecool/actions?query=branch%3Amain+workflow%3ACI)
 
