@@ -19,6 +19,15 @@ on:
     - cron: "0 0 * * *"
 
 jobs:
+  welcome:
+    name: Welcome the user with ASCII art
+    runs-on: ubuntu-latest
+      # if: matrix.operating-system == 'ubuntu-latest'
+    steps:
+     - uses: mscoutermarsh/ascii-art-action@master
+       with:
+          text: '${{ github.event_name }} from ${{ github.actor }}'
+
   test:
     name: Test on ${{ matrix.operating-system }}, Python ${{ matrix.python-version }}
     runs-on: ${{ matrix.operating-system }}
@@ -50,12 +59,6 @@ jobs:
         auto-update-conda: false
         auto-activate-base: false
         show-channel-urls: true
-    
-    - name: Welcome
-      if: matrix.operating-system == 'ubuntu-latest'
-      uses: mscoutermarsh/ascii-art-action@master
-      with:
-        text: '${{ github.event_name }} from ${{ github.actor }}'
 
     - name: Install package
 
