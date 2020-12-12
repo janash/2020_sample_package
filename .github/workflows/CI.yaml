@@ -83,10 +83,5 @@ jobs:
         file: ./coverage.xml
         flags: unittests
         name: codecov-${{ matrix.operating-system }}-py${{ matrix.python-version }}
-        
-    - name: Python Linter
-      uses: sunnysid3up/python-linter@v0.1-beta.7
-      with:
-        source: molecool
 
 
