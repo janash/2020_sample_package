@@ -1,7 +1,10 @@
 molecool
 ==============================
 [//]: # (Badges)
-[![GitHub Actions Build Status](https://github.com/REPLACE_WITH_OWNER_ACCOUNT/molecool/workflows/CI/badge.svg)](https://github.com/REPLACE_WITH_OWNER_ACCOUNT/molecool/actions?query=branch%3Amaster+workflow%3ACI)
+[![GitHub Actions Build Status](https://github.com/janash/molecool/workflows/CI/badge.svg)](https://github.com/janash/molecool/actions?query=branch%3Amaster+workflow%3ACI)
+
+[![GitHub Actions Build Status](https://github.com/janash/molecool/workflows/CI/badge.svg)](https://github.com/janash/molecool/actions?query=branch%3Amain+workflow%3ACI)
+
 [![codecov](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/molecool/branch/master/graph/badge.svg)](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/molecool/branch/master)
 
 
